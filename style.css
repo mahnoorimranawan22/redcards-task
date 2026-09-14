@@ -1,0 +1,450 @@
+/* Red Card 2018 - Shared CSS Stylesheet */
+
+:root {
+  --primary-red: #7e2226;
+  --primary-red-dark: #661a1e;
+  --text-white: #ffffff;
+  --text-dark: #111111;
+  --text-muted-dark: #2d0c0e;
+  --text-placeholder: #e6b8ba;
+  --border-light: rgba(255, 255, 255, 0.85);
+  --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #ffffff;
+  color: var(--text-dark);
+  line-height: 1.4;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Common Layout Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Page Top Header for Submission page */
+.site-header {
+  padding: 25px 40px;
+  background-color: #ffffff;
+}
+
+.site-header .logo {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+/* Diagonal Cut Box utility */
+.cut-corner {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 90px), calc(100% - 90px) 100%, 0 100%);
+}
+
+/* ==========================================================================
+   SUBMISSION PAGE (index.html) STYLES
+   ========================================================================== */
+
+.submission-banner {
+  background-color: var(--primary-red);
+  color: var(--text-white);
+  padding: 60px 80px 80px 80px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.submission-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Left Column */
+.submission-left {
+  flex: 1;
+  max-width: 480px;
+  position: relative;
+}
+
+.submission-left h1 {
+  font-size: 80px;
+  font-weight: 900;
+  color: var(--text-white);
+  margin-bottom: 30px;
+  letter-spacing: -1.5px;
+  line-height: 1.0;
+}
+
+.submission-left p.desc {
+  font-size: 16px;
+  color: var(--text-muted-dark);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  max-width: 440px;
+}
+
+.submission-left .deadline {
+  color: var(--text-dark);
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.submission-left .deadline span {
+  display: block;
+}
+
+/* Floating White Decorative Accents */
+.square-accent {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+}
+
+.acc-1 {
+  right: -20px;
+  top: 48%;
+}
+
+.acc-2 {
+  right: 15px;
+  bottom: 20%;
+}
+
+/* Right Column (Form) */
+.submission-right {
+  flex: 1;
+  max-width: 520px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  background: transparent;
+  border: 2px solid var(--border-light);
+  color: var(--text-white);
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--text-white);
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.form-input:focus {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.award-section-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-top: 35px;
+  margin-bottom: 4px;
+}
+
+.award-section-sub {
+  font-size: 13px;
+  color: var(--text-muted-dark);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Nomination Item */
+.award-item {
+  margin-bottom: 22px;
+}
+
+.award-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-light);
+  background-color: transparent;
+  margin-right: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.custom-checkbox:checked {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.custom-checkbox:checked::after {
+  content: '✓';
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: -2px;
+}
+
+.award-label {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-white);
+  cursor: pointer;
+  flex: 1;
+}
+
+.award-tag-accent {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+
+.award-textarea {
+  width: 100%;
+  height: 75px;
+  padding: 12px 16px;
+  background: transparent;
+  border: 2px solid var(--border-light);
+  color: var(--text-white);
+  font-family: inherit;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+}
+
+.award-textarea::placeholder {
+  color: var(--text-white);
+  opacity: 0.85;
+}
+
+.award-textarea:focus {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Submit Success Indicator Button */
+.submit-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.btn-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  border: none;
+  padding: 16px 36px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+}
+
+.btn-success .check-icon {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   AWARDS PAGE (awards.html) STYLES
+   ========================================================================== */
+
+.awards-header-banner {
+  background-color: var(--primary-red);
+  color: var(--text-white);
+  padding: 60px 40px 70px 40px;
+  text-align: center;
+}
+
+.awards-header-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.awards-logo {
+  height: 90px;
+  width: auto;
+  margin-bottom: 25px;
+}
+
+.awards-title {
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--text-white);
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+  line-height: 1.0;
+}
+
+.awards-subtitle {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 35px;
+}
+
+.awards-description {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.65;
+  color: var(--text-white);
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.awards-description strong {
+  color: var(--text-white);
+  font-weight: 900;
+}
+
+/* Category Sections */
+.category-section {
+  padding: 45px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.category-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* Custom CSS Red Triangle Icon fallback */
+.triangle-icon {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid var(--primary-red);
+  display: inline-block;
+}
+
+.category-title {
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+/* 5-Column Grid for Badges */
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.badge-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.badge-caption-red {
+  color: var(--primary-red);
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.badge-caption-black {
+  color: var(--text-dark);
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+/* Footer Banner */
+.awards-footer-banner {
+  background-color: var(--primary-red);
+  color: var(--text-white);
+  padding: 60px 50px 70px 50px;
+  margin-top: 50px;
+}
+
+.awards-footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.awards-footer-title {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--text-white);
+  text-transform: uppercase;
+  max-width: 800px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .submission-grid {
+    flex-direction: column;
+  }
+  .submission-banner {
+    padding: 40px 30px;
+  }
+  .submission-left h1 {
+    font-size: 56px;
+  }
+  .awards-title {
+    font-size: 48px;
+  }
+  .awards-subtitle {
+    font-size: 24px;
+  }
+  .badge-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .awards-footer-title {
+    font-size: 32px;
+  }
+}
