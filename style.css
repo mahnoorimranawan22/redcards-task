@@ -383,14 +383,14 @@ body {
   object-fit: contain;
 }
 
-/* Custom CSS Red Triangle Wedge Icon */
+/* Custom CSS Red Right-Angled Triangle Icon */
 .triangle-icon {
-  width: 0;
-  height: 0;
-  border-top: 14px solid transparent;
-  border-bottom: 14px solid transparent;
-  border-left: 22px solid var(--primary-red);
+  width: 22px;
+  height: 24px;
+  background-color: var(--primary-red);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .category-title {
