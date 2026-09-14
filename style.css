@@ -17,7 +17,12 @@
   padding: 0;
 }
 
+html,
 body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: var(--font-family);
   background-color: #ffffff;
   color: var(--text-dark);
@@ -28,13 +33,15 @@ body {
 
 /* Common Layout Containers */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Page Top Header for Submission page */
 .site-header {
+  width: 100%;
   padding: 25px 40px;
   background-color: #ffffff;
 }
@@ -60,12 +67,15 @@ body {
   padding: 60px 80px 80px 80px;
   position: relative;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .submission-grid {
   display: flex;
   justify-content: space-between;
   gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Left Column */
@@ -266,8 +276,7 @@ body {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .btn-success .check-icon {
@@ -284,6 +293,7 @@ body {
   color: var(--text-white);
   padding: 60px 40px 70px 40px;
   text-align: center;
+  width: 100%;
 }
 
 .awards-header-content {
@@ -329,9 +339,10 @@ body {
 
 /* Category Sections */
 .category-section {
-  padding: 45px 0;
-  max-width: 1000px;
+  padding: 45px 20px;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .category-header {
@@ -408,6 +419,7 @@ body {
   color: var(--text-white);
   padding: 60px 50px 70px 50px;
   margin-top: 50px;
+  width: 100%;
 }
 
 .awards-footer-content {
@@ -426,24 +438,30 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  .submission-grid {
-    flex-direction: column;
-  }
   .submission-banner {
     padding: 40px 30px;
   }
+
+  .submission-grid {
+    flex-direction: column;
+  }
+
   .submission-left h1 {
     font-size: 56px;
   }
+
   .awards-title {
     font-size: 48px;
   }
+
   .awards-subtitle {
     font-size: 24px;
   }
+
   .badge-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .awards-footer-title {
     font-size: 32px;
   }
