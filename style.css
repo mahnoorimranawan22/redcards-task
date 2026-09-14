@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
 /* Red Card 2018 - Shared CSS Stylesheet */
 
 :root {
@@ -8,7 +10,7 @@
   --text-muted-dark: #2d0c0e;
   --text-placeholder: #e6b8ba;
   --border-light: rgba(255, 255, 255, 0.85);
-  --font-family: 'Helvetica Neue', Arial, sans-serif;
+  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 * {
@@ -42,12 +44,12 @@ body {
 /* Page Top Header for Submission page */
 .site-header {
   width: 100%;
-  padding: 25px 40px;
+  padding: 30px 60px 20px 60px;
   background-color: #ffffff;
 }
 
 .site-header .logo {
-  height: 80px;
+  height: 75px;
   width: auto;
   display: block;
 }
@@ -64,7 +66,7 @@ body {
 .submission-banner {
   background-color: var(--primary-red);
   color: var(--text-white);
-  padding: 60px 80px 80px 80px;
+  padding: 70px 80px 90px 80px;
   position: relative;
   margin-bottom: 40px;
   width: 100%;
@@ -73,9 +75,10 @@ body {
 .submission-grid {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
 /* Left Column */
@@ -86,28 +89,30 @@ body {
 }
 
 .submission-left h1 {
-  font-size: 80px;
+  font-size: 76px;
   font-weight: 900;
   color: var(--text-white);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   letter-spacing: -1.5px;
   line-height: 1.0;
+  text-transform: uppercase;
 }
 
 .submission-left p.desc {
-  font-size: 16px;
+  font-size: 15px;
   color: var(--text-muted-dark);
   font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 40px;
+  line-height: 1.6;
+  margin-bottom: 35px;
   max-width: 440px;
 }
 
 .submission-left .deadline {
   color: var(--text-dark);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
-  line-height: 1.3;
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .submission-left .deadline span {
@@ -148,7 +153,8 @@ body {
   background: transparent;
   border: 2px solid var(--border-light);
   color: var(--text-white);
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 500;
   font-family: inherit;
   outline: none;
 }
@@ -157,6 +163,7 @@ body {
   color: var(--text-white);
   opacity: 0.9;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .form-input:focus {
@@ -243,6 +250,7 @@ body {
   color: var(--text-white);
   font-family: inherit;
   font-size: 14px;
+  font-weight: 500;
   resize: none;
   outline: none;
 }
@@ -250,6 +258,7 @@ body {
 .award-textarea::placeholder {
   color: var(--text-white);
   opacity: 0.85;
+  font-weight: 400;
 }
 
 .award-textarea:focus {
@@ -271,17 +280,18 @@ body {
   background-color: #ffffff;
   color: var(--text-dark);
   border: none;
-  padding: 16px 36px;
-  font-size: 24px;
-  font-weight: 500;
+  padding: 14px 34px;
+  font-size: 22px;
+  font-weight: 700;
   font-family: inherit;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+  letter-spacing: 0.3px;
 }
 
 .btn-success .check-icon {
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 900;
 }
 
 /* ==========================================================================
@@ -291,7 +301,7 @@ body {
 .awards-header-banner {
   background-color: var(--primary-red);
   color: var(--text-white);
-  padding: 60px 40px 70px 40px;
+  padding: 70px 40px 80px 40px;
   text-align: center;
   width: 100%;
 }
@@ -312,8 +322,9 @@ body {
   font-weight: 900;
   color: var(--text-white);
   letter-spacing: -1px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   line-height: 1.0;
+  text-transform: uppercase;
 }
 
 .awards-subtitle {
@@ -325,7 +336,7 @@ body {
 
 .awards-description {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.65;
   color: var(--text-white);
   text-align: left;
@@ -339,7 +350,7 @@ body {
 
 /* Category Sections */
 .category-section {
-  padding: 45px 20px;
+  padding: 50px 40px;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -349,7 +360,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   margin-left: 20px;
 }
 
@@ -370,7 +381,7 @@ body {
 }
 
 .category-title {
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 900;
   color: var(--text-dark);
   letter-spacing: -0.5px;
@@ -381,7 +392,7 @@ body {
 .badge-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 24px;
   text-align: center;
   padding: 0 20px;
 }
@@ -393,31 +404,32 @@ body {
 }
 
 .badge-img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .badge-caption-red {
   color: var(--primary-red);
   font-weight: 900;
   font-size: 15px;
-  line-height: 1.2;
+  line-height: 1.25;
+  margin-bottom: 2px;
 }
 
 .badge-caption-black {
   color: var(--text-dark);
   font-weight: 900;
   font-size: 15px;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 /* Footer Banner */
 .awards-footer-banner {
   background-color: var(--primary-red);
   color: var(--text-white);
-  padding: 60px 50px 70px 50px;
+  padding: 60px 50px 75px 50px;
   margin-top: 50px;
   width: 100%;
 }
@@ -428,26 +440,32 @@ body {
 }
 
 .awards-footer-title {
-  font-size: 46px;
+  font-size: 44px;
   font-weight: 900;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--text-white);
   text-transform: uppercase;
   max-width: 800px;
+  letter-spacing: -0.5px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
+  .site-header {
+    padding: 20px 30px;
+  }
+
   .submission-banner {
     padding: 40px 30px;
   }
 
   .submission-grid {
     flex-direction: column;
+    gap: 40px;
   }
 
   .submission-left h1 {
-    font-size: 56px;
+    font-size: 52px;
   }
 
   .awards-title {
@@ -458,11 +476,21 @@ body {
     font-size: 24px;
   }
 
+  .category-title {
+    font-size: 30px;
+  }
+
   .badge-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .awards-footer-title {
-    font-size: 32px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .badge-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
