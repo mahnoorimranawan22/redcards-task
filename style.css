@@ -365,15 +365,15 @@ body {
 .category-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 60px;
+  padding: 30px 60px;
   width: 100%;
 }
 
 .category-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: 14px;
+  margin-bottom: 26px;
   margin-left: 0;
 }
 
@@ -383,18 +383,18 @@ body {
   object-fit: contain;
 }
 
-/* Custom CSS Red Triangle Icon fallback */
+/* Custom CSS Red Triangle Wedge Icon */
 .triangle-icon {
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 18px solid var(--primary-red);
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 22px solid var(--primary-red);
   display: inline-block;
 }
 
 .category-title {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 900;
   color: var(--text-dark);
   letter-spacing: -0.5px;
@@ -418,26 +418,26 @@ body {
 }
 
 .badge-img {
-  width: 85px;
-  height: 85px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .badge-caption-red {
   color: var(--primary-red);
   font-weight: 800;
-  font-size: 13px;
-  line-height: 1.2;
-  margin-bottom: 1px;
+  font-size: 13.5px;
+  line-height: 1.25;
+  margin-bottom: 2px;
   text-align: center;
 }
 
 .badge-caption-black {
   color: var(--text-dark);
-  font-weight: 800;
-  font-size: 13px;
-  line-height: 1.2;
+  font-weight: 900;
+  font-size: 13.5px;
+  line-height: 1.25;
   text-align: center;
 }
 
@@ -445,8 +445,8 @@ body {
 .awards-footer-banner {
   background-color: var(--primary-red);
   color: var(--text-white);
-  padding: 50px 0 65px 0;
-  margin-top: 30px;
+  padding: 55px 0 70px 0;
+  margin-top: 35px;
   width: 100%;
 }
 
