@@ -383,12 +383,12 @@ body {
   object-fit: contain;
 }
 
-/* Custom CSS Red Right-Angled Triangle Icon */
+/* Custom CSS Red Right-Angled Triangle Icon (mirrored - right side) */
 .triangle-icon {
   width: 22px;
   height: 24px;
   background-color: var(--primary-red);
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
   display: inline-block;
   flex-shrink: 0;
 }
@@ -429,7 +429,7 @@ body {
 .badge-caption-red {
   color: var(--primary-red);
   font-weight: 800;
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.25;
   margin-bottom: 2px;
   text-align: center;
@@ -438,7 +438,7 @@ body {
 .badge-caption-black {
   color: var(--text-dark);
   font-weight: 900;
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.25;
   text-align: center;
 }
