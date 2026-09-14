@@ -44,13 +44,14 @@ body {
 /* Page Top Header for Submission page */
 .site-header {
   width: 100%;
-  padding: 30px 60px 20px 60px;
+  padding: 30px 0 20px 0;
   background-color: #ffffff;
 }
 
 .site-header-content {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 60px;
 }
 
 .site-header .logo {
@@ -71,7 +72,7 @@ body {
 .submission-banner {
   background-color: var(--primary-red);
   color: var(--text-white);
-  padding: 70px 60px 90px 60px;
+  padding: 70px 0 90px 0;
   position: relative;
   margin-bottom: 40px;
   width: 100%;
@@ -83,6 +84,7 @@ body {
   gap: 80px;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 60px;
   align-items: flex-start;
 }
 
@@ -306,7 +308,7 @@ body {
 .awards-header-banner {
   background-color: var(--primary-red);
   color: var(--text-white);
-  padding: 70px 60px 80px 60px;
+  padding: 70px 0 80px 0;
   text-align: left;
   width: 100%;
 }
@@ -314,6 +316,7 @@ body {
 .awards-header-content {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 60px;
   text-align: left;
 }
 
@@ -360,10 +363,15 @@ body {
 
 /* Category Sections */
 .category-section {
-  padding: 45px 60px;
+  padding: 45px 0;
+  width: 100%;
+}
+
+.category-section-content,
+.category-section {
   max-width: 1100px;
   margin: 0 auto;
-  width: 100%;
+  padding: 45px 60px;
 }
 
 .category-header {
@@ -442,7 +450,7 @@ body {
 .awards-footer-banner {
   background-color: var(--primary-red);
   color: var(--text-white);
-  padding: 65px 60px 80px 60px;
+  padding: 65px 0 80px 0;
   margin-top: 40px;
   width: 100%;
 }
@@ -450,6 +458,7 @@ body {
 .awards-footer-content {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 60px;
   text-align: left;
 }
 
@@ -466,12 +475,14 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  .site-header {
-    padding: 20px 30px;
-  }
 
-  .submission-banner {
-    padding: 40px 30px;
+  .site-header-content,
+  .submission-grid,
+  .awards-header-content,
+  .category-section,
+  .awards-footer-content {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .submission-grid {
@@ -481,13 +492,6 @@ body {
 
   .submission-left h1 {
     font-size: 52px;
-  }
-
-  .awards-header-banner,
-  .category-section,
-  .awards-footer-banner {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .awards-title {
